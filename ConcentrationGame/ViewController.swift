@@ -9,11 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var countLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func touchCard(_ sender: UIButton) {
+        
+        print("touch Card!")
+    }
+    
+    func flipCard() {
+        
+        print("메소드")
+    }
+    
 
 
 }
