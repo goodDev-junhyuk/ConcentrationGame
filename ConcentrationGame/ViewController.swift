@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var flipCount: Int = 0 {
+        didSet {
+            countLabel.text = "Flips = \(flipCount)"
+        }
+    }
+    
     @IBOutlet var countLabel: UILabel!
     
     override func viewDidLoad() {
@@ -25,6 +31,7 @@ class ViewController: UIViewController {
     func flipCard() {
         
         print("메소드")
+        
     }
     
 
