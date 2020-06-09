@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C8074692248FD1FA00C3A2DB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8074691248FD1FA00C3A2DB /* MainViewController.swift */; };
+		C8074697248FD4F000C3A2DB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8074696248FD4F000C3A2DB /* Default-568h@2x.png */; };
 		C80F3254247ABB60007307F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F3253247ABB60007307F7 /* AppDelegate.swift */; };
 		C80F3256247ABB60007307F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F3255247ABB60007307F7 /* SceneDelegate.swift */; };
 		C80F325B247ABB60007307F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C80F3259247ABB60007307F7 /* Main.storyboard */; };
@@ -17,7 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C8074691248FD1FA00C3A2DB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C8074691248FD1FA00C3A2DB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MainViewController.swift; sourceTree = "<group>"; };
+		C8074696248FD4F000C3A2DB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C80F3250247ABB60007307F7 /* ConcentrationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcentrationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C80F3253247ABB60007307F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C80F3255247ABB60007307F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +41,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8074693248FD42C00C3A2DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C80F3259247ABB60007307F7 /* Main.storyboard */,
+				C80F325F247ABB62007307F7 /* Assets.xcassets */,
+				C80F3261247ABB62007307F7 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8074694248FD43900C3A2DB /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				C80F325C247ABB60007307F7 /* ConcentrationGame.xcdatamodeld */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		C8074695248FD44300C3A2DB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C80F3253247ABB60007307F7 /* AppDelegate.swift */,
+				C80F3255247ABB60007307F7 /* SceneDelegate.swift */,
+				C8074691248FD1FA00C3A2DB /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		C80F3247247ABB60007307F7 = {
 			isa = PBXGroup;
 			children = (
+				C8074696248FD4F000C3A2DB /* Default-568h@2x.png */,
 				C80F3252247ABB60007307F7 /* ConcentrationGame */,
 				C80F3251247ABB60007307F7 /* Products */,
 			);
@@ -58,14 +89,10 @@
 		C80F3252247ABB60007307F7 /* ConcentrationGame */ = {
 			isa = PBXGroup;
 			children = (
-				C80F3253247ABB60007307F7 /* AppDelegate.swift */,
-				C80F3255247ABB60007307F7 /* SceneDelegate.swift */,
-				C8074691248FD1FA00C3A2DB /* MainViewController.swift */,
-				C80F3259247ABB60007307F7 /* Main.storyboard */,
-				C80F325F247ABB62007307F7 /* Assets.xcassets */,
-				C80F3261247ABB62007307F7 /* LaunchScreen.storyboard */,
 				C80F3264247ABB62007307F7 /* Info.plist */,
-				C80F325C247ABB60007307F7 /* ConcentrationGame.xcdatamodeld */,
+				C8074695248FD44300C3A2DB /* Controllers */,
+				C8074693248FD42C00C3A2DB /* Views */,
+				C8074694248FD43900C3A2DB /* Supports */,
 			);
 			path = ConcentrationGame;
 			sourceTree = "<group>";
@@ -129,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C80F3263247ABB62007307F7 /* LaunchScreen.storyboard in Resources */,
+				C8074697248FD4F000C3A2DB /* Default-568h@2x.png in Resources */,
 				C80F3260247ABB62007307F7 /* Assets.xcassets in Resources */,
 				C80F325B247ABB60007307F7 /* Main.storyboard in Resources */,
 			);
@@ -291,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V8898Z33P;
 				INFOPLIST_FILE = ConcentrationGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V8898Z33P;
 				INFOPLIST_FILE = ConcentrationGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
