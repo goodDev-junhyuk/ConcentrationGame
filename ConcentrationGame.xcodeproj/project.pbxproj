@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8074692248FD1FA00C3A2DB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8074691248FD1FA00C3A2DB /* MainViewController.swift */; };
 		C80F3254247ABB60007307F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F3253247ABB60007307F7 /* AppDelegate.swift */; };
 		C80F3256247ABB60007307F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F3255247ABB60007307F7 /* SceneDelegate.swift */; };
-		C80F3258247ABB60007307F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F3257247ABB60007307F7 /* ViewController.swift */; };
 		C80F325B247ABB60007307F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C80F3259247ABB60007307F7 /* Main.storyboard */; };
 		C80F325E247ABB60007307F7 /* ConcentrationGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C80F325C247ABB60007307F7 /* ConcentrationGame.xcdatamodeld */; };
 		C80F3260247ABB62007307F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C80F325F247ABB62007307F7 /* Assets.xcassets */; };
@@ -17,10 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8074691248FD1FA00C3A2DB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C80F3250247ABB60007307F7 /* ConcentrationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcentrationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C80F3253247ABB60007307F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C80F3255247ABB60007307F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C80F3257247ABB60007307F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C80F325A247ABB60007307F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C80F325D247ABB60007307F7 /* ConcentrationGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConcentrationGame.xcdatamodel; sourceTree = "<group>"; };
 		C80F325F247ABB62007307F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				C80F3253247ABB60007307F7 /* AppDelegate.swift */,
 				C80F3255247ABB60007307F7 /* SceneDelegate.swift */,
-				C80F3257247ABB60007307F7 /* ViewController.swift */,
+				C8074691248FD1FA00C3A2DB /* MainViewController.swift */,
 				C80F3259247ABB60007307F7 /* Main.storyboard */,
 				C80F325F247ABB62007307F7 /* Assets.xcassets */,
 				C80F3261247ABB62007307F7 /* LaunchScreen.storyboard */,
@@ -141,10 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C80F3258247ABB60007307F7 /* ViewController.swift in Sources */,
 				C80F3254247ABB60007307F7 /* AppDelegate.swift in Sources */,
 				C80F3256247ABB60007307F7 /* SceneDelegate.swift in Sources */,
 				C80F325E247ABB60007307F7 /* ConcentrationGame.xcdatamodeld in Sources */,
+				C8074692248FD1FA00C3A2DB /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
