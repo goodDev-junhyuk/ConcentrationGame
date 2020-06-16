@@ -10,8 +10,17 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    
+    var flipCount: Int = 0 {
+        didSet {
+            flipCountLabel.text = "Flips : \(flipCount)"
 
+        }
+    }
+    
+    @IBOutlet weak var flipCountLabel: UILabel!
+    
+    @IBOutlet var cardButtons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,13 +28,16 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func touchCard(_ sender: UIButton) {
-        flipCard(withEmoji: "👻", on: sender)
-        print("카드를 탭하였다.")
+        
+        flipCount += 1
+        let cardNumber = cardButtons.index(of: sender)
+        print("cardNumber : \(cardNumber)")
         
     }
     
     // 메소드 구현.
     func flipCard(withEmoji emoji: String, on button: UIButton) {
+        print("flipCard(withEmoji: \(emoji))")
         
         if button.currentTitle == emoji {
             
