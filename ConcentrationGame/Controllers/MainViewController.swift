@@ -17,8 +17,9 @@ class MainViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var flipCountLabel: UILabel!
+    var emojiChoices = ["🎃" ,"👻", "🤡", "🌚"]
     
+    @IBOutlet weak var flipCountLabel: UILabel!
     @IBOutlet var cardButtons: [UIButton]!
     
     override func viewDidLoad() {
@@ -30,8 +31,14 @@ class MainViewController: UIViewController {
     @IBAction func touchCard(_ sender: UIButton) {
         
         flipCount += 1
-        let cardNumber = cardButtons.index(of: sender)
-        print("cardNumber : \(cardNumber)")
+        if let cardNumber = cardButtons.index(of: sender) {
+            flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
+            
+            print("cardNumber : \(cardNumber)")
+
+        } else {
+            print("카드가 선택되지 않았습니다.")
+        }
         
     }
     
