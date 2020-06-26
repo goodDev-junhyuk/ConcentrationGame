@@ -68,9 +68,14 @@ class MainViewController: UIViewController {
     
     
     var emojiChoices = ["🎃" ,"👻", "🤡", "🌚", "🐸", "🐔", "🙉", "🐶", "🦉"]
+    
+    var emoji = [Int: String]()
 
     func emoji(for card: Card) -> String {
         
+        if emoji[card.identifier] != nil {
+            return emoji[card.identifier]!
+        }
         return "?"
         
     }
