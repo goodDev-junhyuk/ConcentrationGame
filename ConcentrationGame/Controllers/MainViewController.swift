@@ -75,8 +75,10 @@ class MainViewController: UIViewController {
         
         if emoji[card.identifier] != nil {
             return emoji[card.identifier]!
+        } else {
+            return "?"
+
         }
-        return "?"
         
     }
     
