@@ -73,12 +73,17 @@ class MainViewController: UIViewController {
 
     func emoji(for card: Card) -> String {
         
+        /*
         if emoji[card.identifier] != nil {
             return emoji[card.identifier]!
         } else {
             return "?"
-
         }
+        */
+        
+        // 간단하게 옵셔널 한줄로 구현 위 표현과 똑같다.
+        return emoji[card.identifier] ?? "?"
+        
         
     }
     
