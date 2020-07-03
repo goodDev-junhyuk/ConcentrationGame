@@ -44,8 +44,8 @@ class Concentration {
         
         // ShuffleCard, arc4Random_uniform 활용.
         for i in 0...(numberOfPairsOfCards*2)-1 {
-            let j = Int(arc4random_uniform(UInt32(numberOfPairsOfCards)))
-            cards.swapAt(i, j)
+            let randomCard = Int(arc4random_uniform(UInt32(numberOfPairsOfCards)))
+            cards.swapAt(i, randomCard)
         }
         
     }
