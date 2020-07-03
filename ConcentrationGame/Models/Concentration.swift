@@ -19,26 +19,21 @@ class Concentration {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 
                 // 카드가 매치 되었는지
-                if cards[matchIndex].identifier == cards[index] {
+                if cards[matchIndex].identifier == cards[index].identifier {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
                 }
+                cards[index].isFaceUp = true
+                indexOfOneAndOnlyFaceUpCard = nil
             } else {
-                
-                //
-                
+                for flipDownIndex in cards.indices {
+                    cards[flipDownIndex].isFaceUp = false
+                }
+                cards[index].isFaceUp = true
+                indexOfOneAndOnlyFaceUpCard = index
+                        
             }
-            
         }
-        
-//        if cards[index].isFaceUp {
-//            cards[index].isFaceUp = false
-//
-//        } else {
-//            cards[index].isFaceUp = true
-//
-//        }
-        
     }
     
     init(numberOfPairsOfCards: Int) {
@@ -47,6 +42,11 @@ class Concentration {
             cards += [card, card]
         }
         
-        // ShuffleCard
+        // ShuffleCard, arc4Random_uniform 활용.
+        for i in 0...(numberOfPairsOfCards*2)-1 {
+            let j = Int(arc4random_uniform(UInt32(numberOfPairsOfCards)))
+            cards.swapAt(i, j)
+        }
+        
     }
 }
