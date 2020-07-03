@@ -12,7 +12,6 @@ class MainViewController: UIViewController {
     
     lazy var game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
     
-    
     var flipCount: Int = 0 {
         didSet {
             flipCountLabel.text = "Flips : \(flipCount)"
@@ -73,20 +72,15 @@ class MainViewController: UIViewController {
 
     func emoji(for card: Card) -> String {
         
-        /*
-        if emoji[card.identifier] != nil {
-            return emoji[card.identifier]!
-        } else {
-            return "?"
-        }
-        */
+        if emoji[card.identifier] == nil, emojiChoices.count > 0 {
+                let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
+                emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
+
+            }
+        
+            return emoji[card.identifier] ?? "?"
         
         // 간단하게 옵셔널 한줄로 구현 위 표현과 똑같다.
-        return emoji[card.identifier] ?? "?"
-        
-        
-    }
-    
-    
 
+    }
 }
