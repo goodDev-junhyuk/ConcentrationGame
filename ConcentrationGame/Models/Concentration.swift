@@ -25,10 +25,13 @@ class Concentration {
                 }
                 cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = nil
+                
+                // 2개의 카드가 매치 되지 않았을 때.
             } else {
                 for flipDownIndex in cards.indices {
                     cards[flipDownIndex].isFaceUp = false
                 }
+                
                 cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = index
                         
