@@ -12,10 +12,9 @@ class MainViewController: UIViewController {
     
     lazy var game: Concentration  = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
+    
     var numberOfPairsOfCards: Int {
-        
         return (cardButtons.count + 1) / 2
-        
     }
     
     var flipCount: Int = 0 {
