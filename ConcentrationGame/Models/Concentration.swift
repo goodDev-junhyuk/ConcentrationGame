@@ -23,17 +23,19 @@ class Concentration {
                     
                     if foundIndex == nil {
                         foundIndex = index
-                            
-                        } else {
-                            return nil
-                        }
+                    } else {
+                        
+                        return nil
                     }
                 }
+            }
             return foundIndex
         }
         set {
             for index in cards.indices {
                 cards[index].isFaceUp = (index == newValue)
+                
+                
                 
             }
         }
@@ -49,15 +51,9 @@ class Concentration {
                     cards[index].isMatched = true
                 }
                 cards[index].isFaceUp = true
-                indexOfOneAndOnlyFaceUpCard = nil
                 
                 // 2개의 카드가 매치 되지 않았을 때.
             } else {
-                for flipDownIndex in cards.indices {
-                    cards[flipDownIndex].isFaceUp = false
-                }
-                
-                cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = index
                         
             }
