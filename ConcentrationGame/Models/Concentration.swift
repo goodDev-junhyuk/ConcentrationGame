@@ -10,10 +10,10 @@ import UIKit
 
 class Concentration {
     
-    var cards = [Card]()
+    private(set) var cards = [Card]()
     
     // 계산된 속성
-    var indexOfOneAndOnlyFaceUpCard: Int? {
+    private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
             
             var foundIndex: Int?
@@ -42,6 +42,9 @@ class Concentration {
     }
     
     func chooseCard(at index: Int) {
+        
+        assert(cards.indices.contains(index), "Concentration.chooseCard(at: \(index)): chosen index not in the cards")
+        
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 
@@ -61,6 +64,12 @@ class Concentration {
     }
     
     init(numberOfPairsOfCards: Int) {
+        
+        assert(numberOfPairsOfCards > 0, "Concentration.init(at: \(numberOfPairsOfCards)): You must have at least one pair of cards.")
+        
+        
+        
+        
         for identifier in 1...numberOfPairsOfCards {
             let card = Card(identifier: identifier)
             cards += [card, card]
