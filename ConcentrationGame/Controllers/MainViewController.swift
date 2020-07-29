@@ -70,7 +70,6 @@ class MainViewController: UIViewController {
         }
     }
     
-    
     private var emojiChoices = ["🎃" ,"👻", "🤡", "🌚", "🐸", "🐔", "🙉", "🐶", "🦉"]
     
     private var emoji = [Int: String]()
