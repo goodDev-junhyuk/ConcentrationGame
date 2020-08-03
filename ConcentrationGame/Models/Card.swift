@@ -9,7 +9,19 @@
 import Foundation
 
 // 구조체: 상속X, 값 타입.
-struct Card {
+struct Card: Hashable {
+    
+    var hashValue: Int {
+        
+        return identifier
+    }
+    
+    static func ==(lhs: Card, rhs: Card) -> Bool {
+        
+        return lhs.identifier == rhs.identifier
+        
+    }
+    
     
     var isFaceUp = false
     var isMatched = false
