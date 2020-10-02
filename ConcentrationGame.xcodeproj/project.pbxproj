@@ -15,6 +15,7 @@
 		C80F325E247ABB60007307F7 /* ConcentrationGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C80F325C247ABB60007307F7 /* ConcentrationGame.xcdatamodeld */; };
 		C80F3260247ABB62007307F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C80F325F247ABB62007307F7 /* Assets.xcassets */; };
 		C80F3263247ABB62007307F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C80F3261247ABB62007307F7 /* LaunchScreen.storyboard */; };
+		C8DE247C2527710E00977D58 /* GameThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DE247B2527710E00977D58 /* GameThemeViewController.swift */; };
 		C8F24DC224A1CEDB007A45EF /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F24DC124A1CEDB007A45EF /* Concentration.swift */; };
 		C8F24DC624A1D2E7007A45EF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F24DC524A1D2E7007A45EF /* Card.swift */; };
 /* End PBXBuildFile section */
@@ -30,7 +31,8 @@
 		C80F325F247ABB62007307F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C80F3262247ABB62007307F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C80F3264247ABB62007307F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8F24DC124A1CEDB007A45EF /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		C8DE247B2527710E00977D58 /* GameThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameThemeViewController.swift; sourceTree = "<group>"; };
+		C8F24DC124A1CEDB007A45EF /* Concentration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Concentration.swift; sourceTree = "<group>"; };
 		C8F24DC524A1D2E7007A45EF /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				C80F3253247ABB60007307F7 /* AppDelegate.swift */,
 				C80F3255247ABB60007307F7 /* SceneDelegate.swift */,
 				C8074691248FD1FA00C3A2DB /* MainViewController.swift */,
+				C8DE247B2527710E00977D58 /* GameThemeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				C8F24DC624A1D2E7007A45EF /* Card.swift in Sources */,
 				C8F24DC224A1CEDB007A45EF /* Concentration.swift in Sources */,
 				C80F3256247ABB60007307F7 /* SceneDelegate.swift in Sources */,
+				C8DE247C2527710E00977D58 /* GameThemeViewController.swift in Sources */,
 				C80F325E247ABB60007307F7 /* ConcentrationGame.xcdatamodeld in Sources */,
 				C8074692248FD1FA00C3A2DB /* MainViewController.swift in Sources */,
 			);

@@ -70,8 +70,19 @@ class MainViewController: UIViewController {
         }
     }
     
-    private var emojiChoices = ["🎃" ,"👻", "🤡", "🌚", "🐸", "🐔", "🙉", "🐶", "🦉"]
+    var theme: String? {
+        
+        didSet {
+            
+            emojiChoices = theme ?? ""
+            emoji = [:]
+            updateViewFromModel()
+        }
+    }
     
+    
+    
+    private var emojiChoices = ["🎃" ,"👻", "🤡", "🌚", "🐸", "🐔", "🙉", "🐶", "🦉"]
     private var emoji = [Card: String]()
 
     private func emoji(for card: Card) -> String {

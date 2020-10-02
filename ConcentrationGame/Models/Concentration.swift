@@ -18,9 +18,7 @@ struct Concentration {
             
             var foundIndex: Int?
             for index in cards.indices {
-                
                 if cards[index].isFaceUp {
-                    
                     if foundIndex == nil {
                         foundIndex = index
                     } else {
@@ -66,9 +64,6 @@ struct Concentration {
     init(numberOfPairsOfCards: Int) {
         
         assert(numberOfPairsOfCards > 0, "Concentration.init(at: \(numberOfPairsOfCards)): You must have at least one pair of cards.")
-        
-        
-        
         
         for identifier in 1...numberOfPairsOfCards {
             let card = Card(identifier: identifier)
